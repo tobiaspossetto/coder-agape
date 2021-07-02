@@ -1,0 +1,23 @@
+.footer{
+    height: 80px;
+    background: black;
+    max-width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.footer .nombre{
+    color: #ffff;
+}
+
+.footer .icons a{
+    margin-right: 10px;
+
+}
+
+.footer .icons a .img{
+    color: #ffb74d;
+}

@@ -2,8 +2,8 @@ import React from 'react'
 require('./App.css')
 const Home = () => {
     return (
-        <div className="home">
-            HOME
+        <div className="container-pages">
+            
         </div>
     )
 }

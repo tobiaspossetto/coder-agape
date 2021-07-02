@@ -6,6 +6,8 @@ import Home from './Components/pages/Home'
 import Carrito from './Components/pages/Carrito';
 import Accesorios from './Components/pages/Accesorios';
 import Ropa from './Components/pages/Ropa';
+
+import Footer from './Components/footer/Footer'
 require('./app.css')
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path="/ropa" component={Ropa}/>
             
          </Switch>
+
+         <Footer></Footer>
 
       </Router>
     </div>

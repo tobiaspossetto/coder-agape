@@ -2,7 +2,7 @@ import React from 'react'
 require('./App.css')
 const Accesorios = () => {
     return (
-        <div>
+        <div className='container-pages'>
             Accesorios
         </div>
     )

@@ -2,7 +2,7 @@ import React from 'react'
 require('./App.css')
 const Ropa = () => {
     return (
-        <div>
+        <div className='container-pages'>
             Ropa
         </div>
     )
