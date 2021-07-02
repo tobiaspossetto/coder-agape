@@ -4,7 +4,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(129, 73, 73);
 }
 
 .navbar .container-img{
@@ -16,10 +16,19 @@
 
 .links{
     margin-right: 100px;
+    display: flex;
+    align-items: center;
 }
 .links .links-a{
     margin-right: 10px;
     text-decoration: none;
     color: white;
     font-weight: 400;
+}
+
+.carrito{
+    width: 40px;
+}
+.carrito img{
+    width: 100%;
 }
