@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import * as FiIcons from 'react-icons/fi'
+import * as FaIcons from 'react-icons/fa'
 require('./menu.css')
 const Header = (props) => {
     return (
@@ -10,6 +11,8 @@ const Header = (props) => {
                   
                     <FiIcons.FiAlignLeft  size={35} color='white' onClick={props.showSidebar}/>
                 </Link>
+
+                
                 <div className="navbar-logo">
                     <img alt='logo' src='https://i.imgur.com/C3zXSSv.png'></img>
                 </div>

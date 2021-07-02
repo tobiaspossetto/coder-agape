@@ -1,8 +1,8 @@
 import React from 'react'
-require('../App.css')
+require('./App.css')
 const Home = () => {
     return (
-        <div>
+        <div className="home">
             HOME
         </div>
     )
