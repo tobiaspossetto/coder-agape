@@ -1,9 +1,10 @@
 
-
+import Navbar from "./Components/Navbar";
+require("./App.css")
 function App() {
   return (
     <div className="App">
-      asdds
+      <Navbar></Navbar>
     </div>
   );
 }
