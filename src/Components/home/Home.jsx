@@ -1,9 +1,9 @@
 import React from 'react'
-require('./App.css')
+require('../pagesGlobal.css')
 const Home = () => {
     return (
         <div className="container-pages">
-            
+            dsfdfsfd
         </div>
     )
 }

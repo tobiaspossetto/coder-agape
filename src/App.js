@@ -1,9 +1,9 @@
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Menu from './Components/menu/Menu'
-import Home from './Components/pages/Home'
+import Home from './Components/home/Home'
 
-import Carrito from './Components/pages/Carrito';
+import Carrito from './Components/cart/Carrito';
 import Accesorios from './Components/pages/Accesorios';
 import Ropa from './Components/pages/Ropa';
 

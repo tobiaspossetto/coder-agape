@@ -1,9 +1,13 @@
 import React from 'react'
-
+import Item from './Item'
+require('../pagesGlobal.css')
 const Carrito = () => {
     return (
         <div className='container-pages'>
-            Carrito
+            <Item/>
+            <Item/>
+            <Item/>
+            <Item/>
         </div>
     )
 }
