@@ -1,6 +1,6 @@
 
-import Navbar from "./components/Navbar";
-import Container from "./components/Container";
+import Navbar from "./Components/Navbar";
+import Container from "./Components/Container";
 require("./App.css")
 function App() {
   return (
