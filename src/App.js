@@ -13,15 +13,15 @@ function App() {
   return (
     <div className="App">
 
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
          <Menu></Menu>
 
          <Switch>
            
-            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/" exact component={Home}/>
-            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/carrito" component={Carrito}/>
-            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/accesorios" component={Accesorios}/>
-            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/ropa" component={Ropa}/>
+            <Route   path="/" exact component={Home}/>
+            <Route   path="/carrito" component={Carrito}/>
+            <Route   path="/accesorios" component={Accesorios}/>
+            <Route   path="/ropa" component={Ropa}/>
             
          </Switch>
 
