@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import * as FiIcons from 'react-icons/fi'
-import * as FaIcons from 'react-icons/fa'
+
 require('./menu.css')
 const Header = (props) => {
     return (

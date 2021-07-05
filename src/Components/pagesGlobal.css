@@ -1,12 +1,10 @@
 .container-pages{
-  min-height: calc(100vh - 80px - 80px);
+  padding-top: 100px;
+  min-height: calc(100vh - 80px);
 }
 
-.home,.report, .products{
-  /*min-height: calc(100vh - 80px - 80px);*/
-  /* display: flex;
-  align-items: center;
-  justify-content:center;
-  font-size: 3rem; */
-  background-color: rgb(109, 109, 109);
-}
+
+
+
+
+

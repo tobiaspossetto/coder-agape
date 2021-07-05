@@ -1,6 +1,6 @@
 .footer{
     height: 80px;
-    background: black;
+    background: #212121;
     max-width:100%;
     display:flex;
     justify-content: space-between;
@@ -19,5 +19,5 @@
 }
 
 .footer .icons a .img{
-    color: #ffb74d;
+    color: #ffa333;
 }

@@ -1,0 +1,63 @@
+.container-titulo{
+    text-align:center;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.titulo{
+    color: #383838;
+    font-size:30px;
+    text-align:center;
+    
+    margin-left: 0;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+/*Items cargados al carrito*/
+.container-items{
+    margin-bottom: 100px;
+}
+.item{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: -47px -50px 0px -28px rgba(0,0,0,0), 1px 0px 16px 3px rgba(30,30,30,0.35);
+}
+.item h6{
+    font-size: 25px;
+    color:#1f1d1d;
+}
+.accordion-details{
+    background-color: #e9e7e5;
+    background: #ffa333,
+}
+
+.container-form{
+    box-shadow: -47px -50px 0px -28px rgba(0,0,0,0), 1px 0px 16px 3px rgba(30,30,30,0.35);
+    border-radius: 5px;
+    padding:10px;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background: #f3f3f3;
+    margin-bottom: 40px;
+}
+.input{
+    margin-bottom: 10px;
+    color: #383838;
+}
+.form-titulo{
+    color: #383838;
+    font-size: 30px;
+}
+.form-precio{
+    color: #ffa333;
+    font-size:25px;
+    
+}
+.container-precio{
+    padding:5px;
+    background-color: #383838;
+    width: 100%
+}
