@@ -17,10 +17,11 @@ function App() {
          <Menu></Menu>
 
          <Switch>
-            <Route path="/" exact component={Home}/>
-            <Route path="/carrito" component={Carrito}/>
-            <Route path="/accesorios" component={Accesorios}/>
-            <Route path="/ropa" component={Ropa}/>
+           
+            <Route  basename={process.env.PUBLIC_URL} path="/" exact component={Home}/>
+            <Route  basename={process.env.PUBLIC_URL} path="/carrito" component={Carrito}/>
+            <Route  basename={process.env.PUBLIC_URL} path="/accesorios" component={Accesorios}/>
+            <Route  basename={process.env.PUBLIC_URL} path="/ropa" component={Ropa}/>
             
          </Switch>
 
