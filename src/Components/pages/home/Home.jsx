@@ -13,7 +13,7 @@ require('../pages.css')
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      width: '100%',
+      maxWidth: '90%',
       margin: 'auto'
     },
     paper: {

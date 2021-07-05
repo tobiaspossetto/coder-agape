@@ -18,10 +18,10 @@ function App() {
 
          <Switch>
            
-            <Route  basename={process.env.PUBLIC_URL} path="/" exact component={Home}/>
-            <Route  basename={process.env.PUBLIC_URL} path="/carrito" component={Carrito}/>
-            <Route  basename={process.env.PUBLIC_URL} path="/accesorios" component={Accesorios}/>
-            <Route  basename={process.env.PUBLIC_URL} path="/ropa" component={Ropa}/>
+            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/" exact component={Home}/>
+            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/carrito" component={Carrito}/>
+            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/accesorios" component={Accesorios}/>
+            <Route  basename={`${process.env.PUBLIC_URL}/carrito-coder`} path="/ropa" component={Ropa}/>
             
          </Switch>
 
