@@ -1,5 +1,6 @@
 import React from 'react'
 require('../pagesGlobal.css')
+require('./pages.css')
 const Ropa = () => {
     return (
         <div className='container-pages'>

@@ -4,8 +4,8 @@
     margin-bottom: 35px;
 }
 .titulo{
-    color: #383838;
-    font-size:30px;
+    color: #2b2a2a;
+    font-size:40px;
     text-align:center;
     
     margin-left: 0;
@@ -45,10 +45,10 @@
 }
 .input{
     margin-bottom: 10px;
-    color: #383838;
+    color: #2b2a2a;
 }
 .form-titulo{
-    color: #383838;
+    color: #2b2a2a;
     font-size: 30px;
 }
 .form-precio{
@@ -58,6 +58,6 @@
 }
 .container-precio{
     padding:5px;
-    background-color: #383838;
+    background-color: #2b2a2a;
     width: 100%
 }
