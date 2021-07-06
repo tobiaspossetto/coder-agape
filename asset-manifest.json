@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/coder-agape/static/css/main.4f4ad452.chunk.css",
-    "main.js": "/coder-agape/static/js/main.919d689c.chunk.js",
-    "main.js.map": "/coder-agape/static/js/main.919d689c.chunk.js.map",
+    "main.css": "/coder-agape/static/css/main.3d46df12.chunk.css",
+    "main.js": "/coder-agape/static/js/main.133a5928.chunk.js",
+    "main.js.map": "/coder-agape/static/js/main.133a5928.chunk.js.map",
     "runtime-main.js": "/coder-agape/static/js/runtime-main.89b8dda5.js",
     "runtime-main.js.map": "/coder-agape/static/js/runtime-main.89b8dda5.js.map",
     "static/js/2.04aaef3e.chunk.js": "/coder-agape/static/js/2.04aaef3e.chunk.js",
     "static/js/2.04aaef3e.chunk.js.map": "/coder-agape/static/js/2.04aaef3e.chunk.js.map",
     "index.html": "/coder-agape/index.html",
-    "static/css/main.4f4ad452.chunk.css.map": "/coder-agape/static/css/main.4f4ad452.chunk.css.map",
+    "static/css/main.3d46df12.chunk.css.map": "/coder-agape/static/css/main.3d46df12.chunk.css.map",
     "static/js/2.04aaef3e.chunk.js.LICENSE.txt": "/coder-agape/static/js/2.04aaef3e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.89b8dda5.js",
     "static/js/2.04aaef3e.chunk.js",
-    "static/css/main.4f4ad452.chunk.css",
-    "static/js/main.919d689c.chunk.js"
+    "static/css/main.3d46df12.chunk.css",
+    "static/js/main.133a5928.chunk.js"
   ]
 }
