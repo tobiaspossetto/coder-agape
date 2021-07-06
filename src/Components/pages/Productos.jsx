@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 });
 
 
-const Productos = () => {
+const Productos = (props) => {
     const classes = useStyles();
     return (
         <div>
@@ -39,11 +39,14 @@ const Productos = () => {
                         </Typography>
                         </CardContent>
                     </CardActionArea>
-                    <CardActions>
+                    <CardActions className='d-flex justify-content-between pr-5'>
                         <Button size="large" color="black">
                         Ver Más
                         </Button>
-                        
+                        <Typography variant="h8" color="secondary" component="p">
+                            {props.categoria}
+                            {/* Aca va la categoria */}
+                        </Typography>
                     </CardActions>
             </Card>
         </div>

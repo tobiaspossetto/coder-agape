@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
 
+      {/* basename={process.env.PUBLIC_URL} es para subir a gh-pages, lo saco para desarrollar */}
       <Router basename={process.env.PUBLIC_URL}>
          <Menu></Menu>
 
