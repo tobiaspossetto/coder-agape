@@ -61,3 +61,21 @@
     background-color: #2b2a2a;
     width: 100%
 }
+
+.leyenda-defecto{
+    display: none;
+}
+.leyenda-correcto{
+    display: none;
+}
+.leyenda-incorrecto{
+    display: block;
+}
+
+.correcto{
+    border: 4px solid green;
+}
+
+.incorrecto{
+    border:  4px solid rgb(209, 21, 21);
+}
