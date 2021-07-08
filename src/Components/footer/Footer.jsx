@@ -11,13 +11,13 @@ const Footer = () => {
             </div>
             <div className="icons">
 
-                <a target="_blank"  href='https://www.facebook.com/Ag%C3%A1pe-Tienda-Online-105297704567427/'>
+                <a target="_blank" rel=" noreferrer" href='https://www.facebook.com/Ag%C3%A1pe-Tienda-Online-105297704567427/'>
                     <AiIcons.AiFillFacebook className='img' size={30} />
                 </a>
-                <a target="_blank"  href='https://www.instagram.com/agapetiendaonline/'>
+                <a target="_blank"   rel=" noreferrer" href='https://www.instagram.com/agapetiendaonline/'>
                      <AiIcons.AiFillInstagram className='img' size={30} />
                 </a>
-                <a target="_blank" href='https://api.whatsapp.com/send?phone=549356465-6612'>
+                <a target="_blank"  rel=" noreferrer" href='https://api.whatsapp.com/send?phone=549356465-6612'>
                     <AiIcons.AiOutlineWhatsApp className='img' size={30} />
                 </a>
             

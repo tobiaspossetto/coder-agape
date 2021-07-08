@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   
 const Formulario = () => {
     const classes = useStyles();
-    
+    //Creo un estado para cada uno de mis inputs, donde va el campo y un booleano para saber si es valido
     const [nombre, setNombre] = useState({campo:'', valido: null});
     const [apellido, setApellido] = useState({campo:'', valido: null});
     const [correo, setCorreo] = useState({campo:'', valido: null});
@@ -24,20 +24,35 @@ const Formulario = () => {
     const [telefono, setTelefono] = useState({campo:'', valido: null});
     const [direccion, setDireccion] = useState({campo:'', valido: null});
 
+   //Creo un estado para saber si el formulario es correcto y poder enviarlo
     const [formularioValido, setFormularioValido] = useState(null)
 
+    //Creo un objeto donde tiene la info del cliente para guardarlo en la db
+    const [datosForm, setDatosForm] = useState({
+      Clinombre: '',
+      Cliapellido: '',
+      Clicorreo: '',
+      Clitelefono: '',
+      Clidireccion: '',
+    })
+
+    //Las expresiones regulares que voy a usar para validar. Sacadas de internet 
     const expresiones = {
       usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
       nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
       password: /^.{4,12}$/, // 4 a 12 digitos.
       correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
       telefono: /^\d{7,14}$/, // 7 a 14 numeros.,
-      direccion: /^[0-9a-zA-Z. ]+$/
+      direccion: /^[0-9a-zA-Z. ]{5,40}$/
     }
 
+    //Funcion para validar que ambos correos sean iguales
     const validarCorreo2 = () => {
+      //Si hay algo en el correo
       if(correo.campo.length >0){
+
         if(correo2.campo !== correo.campo){
+          //Si los campos no son iguales, no es valido
           setCorreo2((prevState) =>{
             return{...prevState, valido: 'incorrecto'}
           })
@@ -52,6 +67,7 @@ const Formulario = () => {
 
     const onSubmit= (e) => {
         e.preventDefault()
+        //verifico si todos los inputs son correctos
         if(
           nombre.valido === 'correcto' &&
           apellido.valido === 'correcto' &&
@@ -60,7 +76,21 @@ const Formulario = () => {
           telefono.valido === 'correcto' &&
           direccion.valido === 'correcto'
         ){
+
+          //Si es asi entonces el formulario es valido
           setFormularioValido(true)
+
+          //Guardo en mi objeto la info del cliente
+          setDatosForm(
+            datosForm.Clinombre = nombre.campo,
+            datosForm.Cliapellido = apellido.campo,
+            datosForm.Clicorreo = correo.campo,
+            datosForm.Clitelefono = telefono.campo,
+            datosForm.Clidireccion = direccion.campo
+
+          )
+            console.log(datosForm)
+            //Seteo los campos
           setNombre({campo: '', valido: null})
           setApellido({campo: '', valido: null})
           setCorreo({campo: '', valido: null})
@@ -90,7 +120,7 @@ const Formulario = () => {
                   placeholder='Nombre'
                   type='text'
                   name='nombre'
-                  mensajeError = 'Se requiere al menos 4 letras'
+                  mensajeError = 'Este campo es requerido. Mínimo 4 letras sin números'
                   expresionRegular =  {expresiones.nombre}
                   valido = {nombre.valido}
             />
@@ -99,12 +129,12 @@ const Formulario = () => {
                   placeholder='Apellido'
                   type='text'
                   name='apellido'
-                  mensajeError = 'Se requiere al menos 4 letras'
+                  mensajeError = 'Este campo es requerido. Mínimo 4 letras sin números'
                   expresionRegular = {expresiones.nombre}
                   valido = {apellido.valido}
             />
              <Input estado={correo} setEstado = {setCorreo} className='mr-auto ml-auto mb-5 w-75 '
-                  placeholder='Correo1'
+                  placeholder='Correo'
                   type='email'
                   name='email'
                   mensajeError = 'Ingrese un correo valido'
@@ -113,7 +143,7 @@ const Formulario = () => {
             />
 
              <Input estado={correo2} setEstado = {setCorreo2} className='mr-auto ml-auto mb-5 w-75 '
-                  placeholder='Correo2'
+                  placeholder='Confirme su correo'
                   type='email'
                   name='email2'
                   mensajeError = 'El correo no coincide'
@@ -122,24 +152,24 @@ const Formulario = () => {
                   valido = {correo2.valido}
             />
             <Input estado={telefono} setEstado = {setTelefono} className='mr-auto ml-auto mb-5 w-75 '
-                  placeholder='Correo2'
+                  placeholder='telefono'
                   type='text'
-                  name='telefono'
-                  mensajeError = 'Este campo es requerido'
+                  name='Telefono'
+                  mensajeError = 'Este campo es obligatorio. No se permiten guiones ni espacios'
                   expresionRegular = {expresiones.telefono}
                   valido = {telefono.valido}
             />
             <Input estado={direccion} setEstado = {setDireccion} className='mr-auto ml-auto mb-5 w-75 '
                   placeholder='Direccion'
                   type='text'
-                  name='direccion'
+                  name='dirección'
                   mensajeError = 'Este campo es requerido'
                   expresionRegular = {expresiones.direccion}
                   valido = {direccion.valido}
             />
           
 
-          {formularioValido == false ? <h1>Complete el formulario</h1> : ''}
+          {formularioValido === false ? <h1>Complete el formulario</h1> : ''}
 
           <button type="submit" className="btn btn-danger">Enviar</button>
     </form>

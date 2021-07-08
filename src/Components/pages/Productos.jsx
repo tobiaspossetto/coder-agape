@@ -40,10 +40,10 @@ const Productos = (props) => {
                         </CardContent>
                     </CardActionArea>
                     <CardActions className='d-flex justify-content-between pr-5'>
-                        <Button size="large" color="black">
+                        <Button size="large" color="secondary">
                         Ver Más
                         </Button>
-                        <Typography variant="h8" color="secondary" component="p">
+                        <Typography variant="subtitle1" color="secondary" component="p">
                             {props.categoria}
                             {/* Aca va la categoria */}
                         </Typography>
