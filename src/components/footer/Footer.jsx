@@ -3,7 +3,7 @@ require('../styles.css')
 const Footer = () => {
     return (
         <div className="footer">
-            Footer
+            Agape 2021
         </div>
     )
 }

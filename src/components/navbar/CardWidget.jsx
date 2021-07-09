@@ -1,11 +1,15 @@
 import React from 'react'
 
-import  FaShoppingCart from 'react-icons/FaShoppingCart'
+import * as FaIcons from 'react-icons/fa'
 
 const CardWidget = () => {
     return (
-        <div>
-            <FaShoppingCart/>
+        <div className="cardWidget">
+            <a href='#'>
+                 <FaIcons.FaShoppingCart size={30}/>
+                 
+            </a>
+           
         </div>
     )
 }
