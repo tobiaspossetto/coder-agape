@@ -1,0 +1,49 @@
+.navbar{
+    background: rgb(46, 46, 46);
+    height: 60px;
+    width: 100%;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.navbar-img{
+    width: 150px;
+    padding-left: 10px;
+}
+
+.logo{
+    width: 100%;
+}
+
+
+
+.linksContainer{
+    padding-right: 10px;
+    
+}
+
+.linksContainer a {
+    color:white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+
+
+.itemlistcontainer{
+    height: calc(100vh - 60px - 60px);
+    width: 100%;
+    background-color: rgb(239, 254, 255);
+}
+.footer{
+    background: rgb(46, 46, 46);
+    height: 60px;
+    width: 100%;
+    color: white;
+}

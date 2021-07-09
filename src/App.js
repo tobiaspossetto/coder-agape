@@ -1,12 +1,13 @@
-
-import Navbar from "./Components/Navbar";
-import Container from "./Components/Container";
+import NavBar from './components/navbar/NavBar'
+import Footer from './components/footer/Footer'
+import ItemListContainer from './components/Pages/ItemListContainer'
 require("./App.css")
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <Container/>
+        <NavBar/>
+        <ItemListContainer/>
+        <Footer/>
     </div>
   );
 }
