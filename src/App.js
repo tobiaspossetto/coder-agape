@@ -8,12 +8,17 @@ import Accesorios from './Components/pages/Accesorios';
 import Ropa from './Components/pages/Ropa';
 
 import Footer from './Components/footer/Footer'
+
+
+
+import ProductsState from './context/Products/ProductsState'
 require('./app.css')
 function App() {
   return (
-    <div className="App">
+    <ProductsState className="App">
 
       {/* basename={process.env.PUBLIC_URL} es para subir a gh-pages, lo saco para desarrollar */}
+     
       <Router basename={process.env.PUBLIC_URL}>
          <Menu></Menu>
 
@@ -27,9 +32,9 @@ function App() {
          </Switch>
 
          <Footer></Footer>
-
       </Router>
-    </div>
+     </ProductsState>
+  
   );
 }
 

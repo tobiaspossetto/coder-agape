@@ -27,12 +27,11 @@ const Productos = (props) => {
                         component="img"
                         alt="Contemplative Reptile"
                         height="140"
-                        image="https://us.123rf.com/450wm/peshkov/peshkov1706/peshkov170600729/81099736-percha-de-madera-con-camiseta-blanca-vac%C3%ADa-colgando-sobre-fondo-de-hormig%C3%B3n-oscuro-concepto-de-venta-bosq.jpg?ver=6"
-                        title="Contemplative Reptile"
+                        image={props.img}
                         />
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Remera Blanca
+                           {props.name}
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
                         Linda remera blanca para dormir o hacer lo que quieras.

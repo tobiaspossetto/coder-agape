@@ -84,16 +84,11 @@ const Accordion = withStyles({
 
 const Item = () => {
   const classes = useStyles();
-    //FUNCIONES DADAS POR MUI
-    const [expanded, setExpanded] = React.useState('panel1');
-    const handleChange = (panel) => (event, newExpanded) => {
-      setExpanded(newExpanded ? panel : false);
-    };
-
+    
     
     return (
         <div   className='item  '>
-          <Accordion   square  onChange={handleChange('panel1')}>
+          <Accordion   square  >
             <AccordionSummary  aria-controls="panel1d-content" id="panel1d-header">
             <h6 >Remera New York</h6>
           

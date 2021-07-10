@@ -31,7 +31,7 @@ const Input = (props) => {
     }
 
     return (
-        <div className="d-block mr-auto ml-auto  w-75 ">
+        <div className="d-block mr-auto ml-auto  w-90 ">
              <input className={'w-100 input ' + props.valido}
                     type={props.type}
                      placeholder={props.placeholder}
@@ -46,7 +46,7 @@ const Input = (props) => {
                          
             </input>
             
-            <span className={'leyenda-defecto '+ 'leyenda-'+props.valido}>{props.mensajeError}</span>
+            <span className={'leyenda-defecto leyenda-'+props.valido}>{props.mensajeError}</span>
         </div>
     )
 }
