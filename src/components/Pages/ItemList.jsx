@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import Item from './Item'
 const ItemList = () => {
     const [products, setProducts] = useState([]);
@@ -34,12 +34,15 @@ const ItemList = () => {
         
         }
     ]
-    let data = []
+    const get = useRef(true)
+
     useEffect(()=>{
-        getProducts();
-        
-        console.log(products)
-    },[])
+        if(get.current){
+            getProducts()
+            get.current = false;
+        }
+       
+    })
 
 
     const getProducts = async () =>{
@@ -54,7 +57,7 @@ const ItemList = () => {
             },3000);    
         });
         console.log(promesa);
-         data = await promesa;
+         let data = await promesa;
          
          setProducts(data)
          console.log('productos');

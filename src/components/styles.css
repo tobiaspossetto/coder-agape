@@ -67,3 +67,45 @@
     width: 100%;
     color: white;
 }
+
+.countdetail-container{
+    display: flex;
+    align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+    
+
+}
+
+.countdetail-container p {
+    margin: 0px 10px 0px 10px;
+    font-size: 25px;
+    
+}
+/* 
+.countdetail-container button{
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(252, 191, 25)
+} */
+
+.itemdetail{
+    background: rgb(252, 247, 247);
+    padding:20px;
+}
+
+.itemdetail .detail-img{
+   
+    width: 60%;
+    margin: auto;
+}
+
+.itemdetail h4{
+    margin-top: 20px;
+}
+
+.itemdetail .detail-img img{
+    width: 100%;
+}
