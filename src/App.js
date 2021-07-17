@@ -1,14 +1,37 @@
 import NavBar from './components/navbar/NavBar'
 import Footer from './components/footer/Footer'
-import ItemListContainer from './components/Pages/ItemListContainer'
+import Home from './components/Pages/home/Home'
+import CartContainer from './components/Pages/cart/CartContainer'
+import ItemDetailContainer from './components/Pages/details/ItemDetailContainer'
+import ItemListContainer from './components/Pages/products/ItemListContainer'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
 require("./App.css")
 function App() {
   return (
-    <div className="App">
-        <NavBar/>
-        <ItemListContainer/>
+    
+      <Router className="App">
+       <NavBar/>
+        <Switch>
+          <Route exact path={"/"} component={Home}/>
+          <Route exact path={"/productos"} component={ItemListContainer}/> 
+          <Route exact path={"/productos/:category"} component={ItemListContainer}/>
+          <Route exact path={"/productos/detalle/:id"} component={ItemDetailContainer}/>
+          <Route exact path={"/carrito"} component={CartContainer}/>
+          
+        </Switch>
+
+
+
         <Footer/>
-    </div>
+      </Router>
+      
+     
+    
   );
 }
 

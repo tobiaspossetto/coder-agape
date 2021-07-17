@@ -3,7 +3,8 @@ require('../styles.css')
 const Footer = () => {
     return (
         <div className="footer d-flex justify-content-center align-items-center">
-            Agape 2021
+            <p> Agape 2021</p>
+           
         </div>
     )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import ItemDetailContainer from './details/ItemDetailContainer'
+
 import ItemList from './ItemList'
-require('../styles.css')
+require('../../styles.css')
 const ItemListContainer = () => {
     return (
-        <div className="itemlistcontainer">
+        <div className="pages">
             <ItemList/>
-            <ItemDetailContainer/>
+            
         </div>
     )
 }
